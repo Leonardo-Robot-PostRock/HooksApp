@@ -14,10 +14,11 @@ import './index.css'
 // import { MemoHook } from './06-memos/MemoHook';
 // import { CallbackHook } from './06-memos/CallbackHook';
 // import { Padre } from './07-tarea-memo/Padre';
-import './08-useReducer/intro-reducer'
+// import './08-useReducer/intro-reducer'
+import { TodoApp } from './08-useReducer/TodoApp'
 
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   // <React.StrictMode>
-//     <Padre />
-//   // </React.StrictMode>,
-// )
+ReactDOM.createRoot(document.getElementById('root')).render(
+  // <React.StrictMode>
+    <TodoApp />
+  // </React.StrictMode>,
+)
