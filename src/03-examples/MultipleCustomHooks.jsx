@@ -8,18 +8,13 @@ export const MultipleCustomHooks = () => {
 
   const { author, quote } = !!data && data[0];
 
-  const getNextQuote = () => {
-    if (counter >= 5) reset();
-    else increment(1);
-  };
-
   return (
     <>
       <h1>Breaking Bad Quotes</h1>
       <hr />
       {isLoading ? <LoadingQuote /> : <Quote author={author} quote={quote} />}
 
-      <button className="btn btn-primary" onClick={getNextQuote} disabled={isLoading}>
+      <button className="btn btn-primary" onClick={() => increment()} disabled={isLoading}>
         Next quote
       </button>
     </>
